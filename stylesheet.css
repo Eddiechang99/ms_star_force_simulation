@@ -1,0 +1,149 @@
+body {
+     background-image: url(../images/stars-background.jpg);
+     background-color: lightblue;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     font-family: Calibri, 'Courier New';
+}
+
+#wrapper {
+     width: 50%;
+     background-color: rgba(0, 0, 0, .5);
+     border-radius: .4em;
+     margin: auto;
+     margin-top: 80px;
+     border: 1px thin white;
+     padding: .1em .3em;
+     color: white;
+}
+
+h1 {
+     color: yellow;
+     text-align: center;
+     margin: 0;
+     font-size: .7em;
+     font-weight: 100;
+     padding: .2em;
+}
+
+#main-content-div {
+     background-color: rgb(74, 68, 62);
+     border: 3px solid white;
+     border-radius: .4em;
+     padding: .4em;
+}
+
+.borders-in-main-content {
+     border: 1px solid black;
+     border-radius: .3em;
+}
+
+.row-div {
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     border: 1px solid rgb(74, 68, 62);
+}
+
+.blue-background {
+     background-color: rgb(80,149,209);
+}
+
+.dark-brown-background {
+     background-color: rgb(36, 33, 30);
+}
+
+.first-row-columns-divs {
+     display: inline-block;
+     text-align: center;
+     width: 32%;
+     margin-bottom: .2em;
+}
+
+#second-row-column-div {
+     font-size: .6em;
+     text-align: center;
+     padding: .3em 0 .6em 0;
+}
+
+.third-row-column-divs {
+     display: inline-block;
+     margin-top: .3em;
+}
+
+#item-img {
+     width: 35%;
+     height: 7em;
+     float: left;
+}
+
+#status-div {
+     text-align: left;
+     width: 59%;
+     height: 6.1em;
+     margin-left: 1%;
+     padding: 2% 2%;
+}
+
+
+
+
+.fourth-row-column-divs {
+     display: inline-block;
+     margin-top: .5em;
+     font-size: .5em;
+}
+
+     .fourth-row-column-divs div {
+          width: 80%;
+          margin-top: .4em;
+          float: left;
+     }
+
+     .fourth-row-column-divs input {
+          float: right;
+          margin-right: .8em;
+     }
+
+.fifth-row-column-divs {
+     font-size: .6em;
+}
+
+     .fifth-row-column-divs div {
+          display: inline-block;
+          width: 40%;
+          padding-top: .5em;
+          margin-left: .5em;
+          padding-bottom: .3em;
+     }
+
+#mesos-amt-div {
+     font-size: 1.2em;
+}
+
+#coin-img {
+     width: 1em;
+     height: 1em;
+     margin-left: .8em;
+     border-radius: 1em;
+}
+
+.sixth-row-column-divs {
+     width: auto;
+     display: inline-block;
+}
+
+#sixth-row-div {
+     margin: .25em auto;
+     display: block;
+     text-align: center;
+}
+
+#enhance-button {
+     float: right;
+}
+
+#cancel-button {
+     float: left;
+}
+
