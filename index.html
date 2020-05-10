@@ -5,13 +5,14 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="keywords" content="star, force, starforce, maplestory, maple, story, simulation, simulator, gms, enhancement, enhance">
 
-     <base href="https://jato521.github.io/ms_star_force_simulation/ms_star_force_simulation/" target="_blank">
+     <base href="C:\Users\Jason\Desktop\Star Force Enhancement\ms_star_force_simulation\images\" target="_blank">
+     <!--<base href="https://jato521.github.io/ms_star_force_simulation/ms_star_force_simulation/" target="_blank">-->
 
      <title>Star Force Simulator</title>
 
-     <link rel="stylesheet" type="text/css" href="../stylesheet.css" />
+     <link rel="stylesheet" media="screen and (min-width: 1900px) " href="../stylesheet.css" />
 
-    
+
 
      <script>
           function playSound() {
@@ -118,7 +119,7 @@
                     "<i><br/>Item has been destroyed.<br/></i>";
                document.getElementById("statistics").innerHTML =
                     `<u>${postBoomStars} Star > ${postBoomStars + 1} Star</u><br/><br/>    Success Chance: ${twelve[0] / 10} % <br /> Failure(Stay): ${twelve[1] / 10} % <br />
-                                  Boom Chance: ${twelve[2] / 10} % <br/>`
+                                            Boom Chance: ${twelve[2] / 10} % <br/>`
                return postBoomStars;
           }
 
@@ -152,14 +153,14 @@
                if (currentStar > 11 && currentStar != 15 && currentStar != 20 && currentStar < 25) {
                     document.getElementById("statistics").innerHTML =
                          `<u>${currentStar} Star > ${currentStar + 1} Star</u><br/><br/>    Success Chance: ${nextSuccess} % <br /> Failure(Drop): ${nextFail} % <br />
-                                  Boom Chance: ${nextBoom} % <br/>`
+                                            Boom Chance: ${nextBoom} % <br/>`
                }
 
                //equal to 15 or 20: boom, but no drop
                if (currentStar == 15 || currentStar == 20) {
                     document.getElementById("statistics").innerHTML =
                          `<u>${currentStar} Star > ${currentStar + 1} Star</u><br/><br/>    Success Chance: ${nextSuccess} % <br /> Failure(Stay): ${nextFail} % <br />
-                                  Boom Chance: ${nextBoom} % <br/>`
+                                            Boom Chance: ${nextBoom} % <br/>`
                }
           }
 
@@ -191,13 +192,13 @@
                //is safeguard box checked, continue checking
                else if (boolChecked) {
                     document.getElementById("safeguardDiv").innerHTML = `<input checked type="checkbox" id="safeguardCheckBox" name="safeguard" value="1" />
-                                                                                      <b>SAFEGUARD</b>`;
+                                                                                                <b>SAFEGUARD</b>`;
                }
 
                //new checkbox
                else {
                     document.getElementById("safeguardDiv").innerHTML = `<input type="checkbox" id="safeguardCheckBox" name="safeguard" value="1" />
-                                                                                      <b>SAFEGUARD</b>`;
+                                                                                                <b>SAFEGUARD</b>`;
                }
           }
 
@@ -539,14 +540,14 @@
                </div>
                <div class="row-div">
                     <div id="sixth-row-div">
-                         <div class="borders-in-main-content sixth-row-column-divs">
+                         <div class="sixth-row-column-divs">
                               <input type="image" id="enhance-button"
                                      src="../images/enhance_button.jpg"
                                      width="84" height="22"
                                      onclick="mainFunction()" />
                               <audio id="starForceSound" src="../sounds/tick-tock.m4a" />
                          </div>
-                         <div class="borders-in-main-content sixth-row-column-divs">
+                         <div class="sixth-row-column-divs">
                               <input type="image" id="cancel-button"
                                      src="../images/cancel_button.jpg"
                                      width="84" height="22" />
