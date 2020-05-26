@@ -5,13 +5,14 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="keywords" content="star, force, starforce, maplestory, maple, story, simulation, simulator, gms, enhancement, enhance">
 
-     <base href="https://jato521.github.io/ms_star_force_simulation/ms_star_force_simulation/" target="_blank">
+     <!--<base href="https://jato521.github.io/ms_star_force_simulation/ms_star_force_simulation/" target="_blank">-->
+     <base href="C:\Users\Jason\Desktop\Star Force Enhancement\ms_star_force_simulation\images\" target="_blank">
 
      <title>Star Force Simulator</title>
 
      <link rel="stylesheet" href="../stylesheet.css" />
 
-     <script src="../enhance_script.js"></script> 
+     <script src="../enhance_script.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                     </div>
                </div>
                <div class="row-div">
-                    <img id="item-img" class="borders-in-main-content third-row-column-divs" src="../images/item.jpg" alt="item" />
+                    <img class="item-img borders-in-main-content third-row-column-divs" src="../images/item.jpg" alt="item" title="Right click to change item" />
                     <div id="status-div" class="borders-in-main-content third-row-column-divs dark-brown-background">
                          0 Star > 1 Star<br />
                          Success Chance: 95.0% <br />
@@ -45,8 +46,8 @@
                          <input type="checkbox" id="starCatchCheckBox" name="starCatch" value="0" />
                     </div>
                     <div id="safeguard-div" class="borders-in-main-content fourth-row-column-divs dark-brown-background">
-                         <div>SAFEGUARD</div>
-                         <input type="checkbox" id="safeguardCheckBox" name="safeguard" value="0" onclick="changeDisclaimerSG()" />
+                         <div >SAFEGUARD</div>
+                         <input type="checkbox" id="safeguardCheckBox" name="safeguard" value="0" onclick="changeDisclaimerSG()" title="Check this to protect your equipment from being destroyed"/>
                     </div>
                </div>
                <div class="row-div">
@@ -73,5 +74,38 @@
                </div>
           </div>
      </div>
+
+     <script src="../change_item_script.js"></script>
+
+     <nav class="context-menu">
+          <ul class="context-menu-items">
+               <li class="context-menu-item">
+                    <button onclick="changeImage('hat')">Arcane Umbra Hat</button>
+               </li>
+               <li class="context-menu-item">
+                    <button onclick="changeImage('shoulder')">Arcane Umbra Shoulder</button>
+               </li>
+               <li class="context-menu-item">
+                    <button onclick="changeImage('overall')">Arcane Umbra Overall</button>
+               </li>
+               <li class="context-menu-item">
+                    <button onclick="changeImage('shoe')">Arcane Umbra Shoe</button>
+               </li>
+               <li class="context-menu-item">
+                    <button onclick="changeImage('cape')">Arcane Umbra Cape</button>
+               </li>
+               <li class="context-menu-item">
+                    <button onclick="changeImage('glove')">Arcane Umbra Glove</button>
+               </li>
+          </ul>
+     </nav>
+     
+     <div id="system-stats" class="borders-in-main-content">
+          Highest: <span id="highest-star-record"> 0</span> Star(s)
+          <br /><br />
+          Booms: <span id="booms-record"> 0</span> Count
+     </div>
+
+     <script src="../context_menu_script.js"></script>
 </body>
 </html>

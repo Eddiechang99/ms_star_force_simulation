@@ -44,10 +44,12 @@ var allStars = [zero, one, two, three, four, five, six, seven,
 
 var dropTwice = 0;
 var stars = 0;
+var highestStar = 0;
+var booms = 0;
 
 var succString = "Success.";
 var failString = "Fail.";
-var destroyString = "Item has been destroyed.";
+var destroyedString = "Item has been destroyed.";
 var starCountMinus1String = "Star count decreased by 1.";
 
 var disclaimerDivName = "disclaimer-div"
@@ -103,14 +105,19 @@ function getEnhancementResults(chanceArray) {
     }
     //boom: rate > chanceSuccess + chanceFailure
     else {
-        window.alert(destroyString);
+        window.alert(destroyedString);
         return 3;
     }
+}
+
+function printBoomsRecord() {
+    document.getElementById("booms-record").innerHTML = ++booms;
 }
 
 //boom and reset item to 12 stars
 function boom() {
     postBoomStars = 12;
+    printBoomsRecord();
     document.getElementById(statusRatesDivName.toString()).innerHTML = `${postBoomStars} Star > ${postBoomStars + 1} Star<br/>Success Chance: ${twelve[0] / 10}%<br />Failure(Stay): ${twelve[1] / 10}%<br />Boom Chance: ${twelve[2] / 10}%`;
     return postBoomStars;
 }
@@ -219,6 +226,14 @@ function printFailure(star, array) {
     return star;
 }
 
+//sets the highest star record
+function printHighestStarRecord(star) {
+    if (star > highestStar) {
+        highestStar = star;
+        document.getElementById("highest-star-record").innerHTML = highestStar;
+    }
+}
+
 //displays the result
 function results(starCount, allArray) {
     //define the current, previous, and next array chances
@@ -257,6 +272,9 @@ function results(starCount, allArray) {
             dropTwice = 0;
         }
     }
+
+    //highest star?
+    printHighestStarRecord(starCount);
 
     //check if safeguard can be used for next enhancement
     manageSafeguardDiv(starCount);

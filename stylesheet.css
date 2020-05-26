@@ -1,5 +1,5 @@
 body {
-     background-color: lightblue;
+     background-color: rgb(141,170,157);
      font-family: Calibri, 'Courier New';
 }
 
@@ -86,7 +86,7 @@ h1 {
      margin-top: 1%;
 }
 
-#item-img {
+.item-img {
      box-sizing: border-box;
      width: 35%;
      height: 14em;
@@ -178,4 +178,53 @@ h1 {
      width: 20em;
      height: auto;
      border-radius: 1em;
+}
+
+.context-menu {
+     position: absolute;
+     z-index: 10;
+     display: none;
+     background-color: rgb(246,239,166);
+}
+
+     .context-menu ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          text-align: center;
+     }
+
+     .context-menu li {
+          border: 1px solid black;
+     }
+
+          .context-menu li:hover, .context-menu button:hover {
+               background-color: lightslategrey;
+          }
+
+     .context-menu button {
+          background-color: rgb(246,239,166);
+          border: none;
+          width: 100%;
+          height: 3em;
+     }
+
+.context-menu--active {
+     display: block;
+}
+
+#system-stats {
+     border: none;
+     width: 10em;
+     margin: auto;
+     margin-top: 1em;
+     padding: .5em;
+     color: black;
+     text-align: center;
+     background-color: rgb(246,239,166);
+     font-size: 1.5em;
+}
+
+#highest-star-record, #booms-record {
+     text-decoration: underline;
 }
