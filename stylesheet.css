@@ -225,6 +225,6 @@ h1 {
      font-size: 1.5em;
 }
 
-#highest-star-record, #booms-record {
+#highest-star-record-span, #booms-record-span {
      text-decoration: underline;
 }

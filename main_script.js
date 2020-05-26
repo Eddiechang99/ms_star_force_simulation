@@ -5,7 +5,10 @@
 //     "../images/16star.png", "../images/17star.png", "../images/18star.png", "../images/19star.png", "../images/20star.png",
 //     "../images/21star.png", "../images/22star.png", "../images/23star.png", "../images/24star.png", "../images/25star.png"];
 
-//maintain
+/*
+ * star force enhancing script
+ */
+//maintain star levels
 var zero = [950, 50, 0];
 var one = [900, 100, 0];
 var two = [850, 150, 0];
@@ -17,27 +20,27 @@ var seven = [650, 350, 0];
 var eight = [600, 400, 0];
 var nine = [550, 450, 0];
 var ten = [500, 500, 0];
-//drop
+//drop star levels
 var eleven = [450, 550, 0];
-//boom
+//boom star levels
 var twelve = [400, 594, 6];
 var thirteen = [350, 637, 13];
 var fourteen = [300, 686, 14];
-//maintain
+//maintain star levels
 var fifteen = [300, 679, 21];
-//boom
+//boom star levels
 var sixteen = [300, 679, 21];
 var seventeen = [300, 679, 21];
 var eighteen = [300, 672, 28];
 var nineteen = [300, 672, 28];
-//stay
+//stay star levels
 var twenty = [300, 630, 70];
-//boom
+//boom star levels
 var twentyone = [300, 630, 70];
 var twentytwo = [30, 776, 194];
 var twentythree = [20, 686, 294];
 var twentyfour = [10, 594, 396];
-//combo
+
 var allStars = [zero, one, two, three, four, five, six, seven,
     eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen,
     seventeen, eighteen, nineteen, twenty, twentyone, twentytwo, twentythree, twentyfour];
@@ -52,11 +55,15 @@ var failString = "Fail.";
 var destroyedString = "Item has been destroyed.";
 var starCountMinus1String = "Star count decreased by 1.";
 
+/*html names*/
 var disclaimerDivName = "disclaimer-div"
 var statusRatesDivName = "status-div";
 var safeguardDivName = "safeguard-div";
 var safeguardCheckboxInputName = "safeguardCheckBox";
+var highestStarSpanName = "highest-star-record-span";
+var boomsRecordSpanName = "booms-record-span";
 
+/*messages and other texts*/
 var warningImage = `<img src="../images/warning-symbol.png" id="warning-img" alt="caution-logo" />`;
 var mesosAreUsedToEnhanceString = `<span class="golden-yellow-text">MESOS</span> ARE USED TO ENHANCE EQUIPEMENT.`;
 var dropFailString = `${warningImage} THE <span class="golden-yellow-text">ENHANCEMENT LEVEL</span> WILL BE <span class="golden-yellow-text">REDUCED</span> UPON FAILURE.`;
@@ -67,8 +74,8 @@ var safeguardNotAvailMsg = "<div><b><i>Safeguard not available for items with mo
 var safeguardBoxChecked = `<div>SAFEGUARD</div><input checked type="checkbox" id='${safeguardCheckboxInputName.toString()}' name="safeguard" value="1" onclick="changeDisclaimerSG()"/>`
 var safeguardBoxUnchecked = `<div>SAFEGUARD</div><input type="checkbox" id='${safeguardCheckboxInputName.toString()}' name="safeguard" value="0" onclick="changeDisclaimerSG()" />`;
 
+//returns a random int between 1 and 1000, inclusive of 1 and 1000
 function getRandomInt() {
-    //1 to 1000, inclusive of 1 and 1000
     var randomNum = Math.floor((Math.random() * 1000 + 1));
     return randomNum;
 }
@@ -111,7 +118,7 @@ function getEnhancementResults(chanceArray) {
 }
 
 function printBoomsRecord() {
-    document.getElementById("booms-record").innerHTML = ++booms;
+    document.getElementById(boomsRecordSpanName.toString()).innerHTML = ++booms;
 }
 
 //boom and reset item to 12 stars
@@ -230,7 +237,7 @@ function printFailure(star, array) {
 function printHighestStarRecord(star) {
     if (star > highestStar) {
         highestStar = star;
-        document.getElementById("highest-star-record").innerHTML = highestStar;
+        document.getElementById(highestStarSpanName.toString()).innerHTML = highestStar;
     }
 }
 
@@ -366,10 +373,9 @@ function starForce() {
     return stars;
 }
 
-var star;
-
-function main() {
-    star = starForce();
+function mainEnhance() {
+    starForce();
+    //window.alert(stars);
 }
 
 //for safeguard checking and unchecking
@@ -377,19 +383,82 @@ function changeDisclaimerSG() {
     var sgChecked = document.getElementById(safeguardCheckboxInputName.toString()).checked;
 
     //checking at 12-14, 16 star, inclusive: no destroy
-    if (sgChecked && ((star >= 12 && star <= 14) || star == 16)) {
+    if (sgChecked && ((stars >= 12 && stars <= 14) || stars == 16)) {
         document.getElementById(disclaimerDivName.toString()).innerHTML = dropFailString.toString();
     }
     //checking at 15 star: mesos are used...
-    else if (sgChecked && (star == 15)) {
+    else if (sgChecked && (stars == 15)) {
         document.getElementById(disclaimerDivName.toString()).innerHTML = mesosAreUsedToEnhanceString.toString();
     }
     //unchecking at 12-14, 16 star, inclusive: destroy/drop
-    else if (!sgChecked && ((star >= 12 && star <= 14) || star == 16)) {
+    else if (!sgChecked && ((stars >= 12 && stars <= 14) || stars == 16)) {
         document.getElementById(disclaimerDivName.toString()).innerHTML = dropDestroyFailString.toString();
     }
     //unchecking at 15 star: destroy
-    else if (!sgChecked && (star == 15)) {
+    else if (!sgChecked && (stars == 15)) {
         document.getElementById(disclaimerDivName.toString()).innerHTML = destroyString.toString();
+    }
+}
+
+/*
+ * change item script
+ */
+function changeImage(newItemName) {
+    var arcaneHatLink = "../images/arcane_hat.jpg";
+    var arcaneShoulderLink = "../images/arcane_shoulder.jpg";
+    var arcaneOverallLink = "../images/arcane_overall.jpg";
+    var arcaneShoeLink = "../images/arcane_shoe.jpg";
+    var arcaneCapeLink = "../images/arcane_cape.jpg";
+    var arcaneGloveLink = "../images/arcane_glove.jpg";
+
+    var noItemMessage = "No item found. Contact support.";
+
+    switch (newItemName) {
+        case "hat":
+            document.getElementsByClassName("item-img")[0].src = arcaneHatLink.toString();
+            break;
+        case "shoulder":
+            document.getElementsByClassName("item-img")[0].src = arcaneShoulderLink.toString();
+            break;
+        case "overall":
+            document.getElementsByClassName("item-img")[0].src = arcaneOverallLink.toString();
+            break;
+        case "shoe":
+            document.getElementsByClassName("item-img")[0].src = arcaneShoeLink.toString();
+            break;
+        case "cape":
+            document.getElementsByClassName("item-img")[0].src = arcaneCapeLink.toString();
+            break;
+        case "glove":
+            document.getElementsByClassName("item-img")[0].src = arcaneGloveLink.toString();
+            break;
+        default:
+            console.log(noItemMessage.toString())
+            break;
+    }
+}
+
+//resetting upon changing item
+function resetProgress(itemName) {
+    var confirmString = "Changing an item will reset all your progress. Are you sure you want to reload?"
+    var confirmReset = window.confirm(confirmString.toString());
+
+    if (confirmReset == true) {
+        //change image
+        changeImage(itemName);
+
+        //reset disclaimer
+        document.getElementById(disclaimerDivName.toString()).innerHTML = mesosAreUsedToEnhanceString.toString();
+
+        //reset status div and chance time
+        stars = 0;
+        dropTwice = 0;
+        outputNext(0, zero);
+
+        //reset system status div
+        highestStar = 0;
+        document.getElementById(highestStarSpanName.toString()).innerHTML = highestStar;
+        booms = 0;
+        document.getElementById(boomsRecordSpanName.toString()).innerHTML = booms;
     }
 }

@@ -14,7 +14,8 @@
 
      <link rel="icon" type="image/png" href="../images/star_favicon.png" />
 
-     <script src="../enhance_script.js"></script>
+     <script src="../main_script.js"></script>
+     <script src="../reload_script.js"></script>
 </head>
 
 <body>
@@ -48,8 +49,8 @@
                          <input type="checkbox" id="starCatchCheckBox" name="starCatch" value="0" />
                     </div>
                     <div id="safeguard-div" class="borders-in-main-content fourth-row-column-divs dark-brown-background">
-                         <div >SAFEGUARD</div>
-                         <input type="checkbox" id="safeguardCheckBox" name="safeguard" value="0" onclick="changeDisclaimerSG()" title="Check this to protect your equipment from being destroyed"/>
+                         <div>SAFEGUARD</div>
+                         <input type="checkbox" id="safeguardCheckBox" name="safeguard" value="0" onclick="changeDisclaimerSG()" title="Check this to protect your equipment from being destroyed" />
                     </div>
                </div>
                <div class="row-div">
@@ -65,47 +66,46 @@
                               <input type="image" id="enhance-button"
                                      src="../images/enhance_button.jpg"
                                      width="84" height="22"
-                                     onclick="main()" />
+                                     onclick="mainEnhance()" />
                          </div>
                          <div class="sixth-row-column-divs">
                               <input type="image" id="cancel-button"
                                      src="../images/cancel_button.jpg"
-                                     width="84" height="22" />
+                                     width="84" height="22" title="Click this to reload the page"
+                                     onclick="reloadPage()" />
                          </div>
                     </div>
                </div>
           </div>
      </div>
 
-     <script src="../change_item_script.js"></script>
-
      <nav class="context-menu">
           <ul class="context-menu-items">
                <li class="context-menu-item">
-                    <button onclick="changeImage('hat')">Arcane Umbra Hat</button>
+                    <button onclick="resetProgress('hat');">Arcane Umbra Hat</button>
                </li>
                <li class="context-menu-item">
-                    <button onclick="changeImage('shoulder')">Arcane Umbra Shoulder</button>
+                    <button onclick="resetProgress('shoulder');">Arcane Umbra Shoulder</button>
                </li>
                <li class="context-menu-item">
-                    <button onclick="changeImage('overall')">Arcane Umbra Overall</button>
+                    <button onclick="resetProgress('overall');">Arcane Umbra Overall</button>
                </li>
                <li class="context-menu-item">
-                    <button onclick="changeImage('shoe')">Arcane Umbra Shoe</button>
+                    <button onclick="resetProgress('shoe');">Arcane Umbra Shoe</button>
                </li>
                <li class="context-menu-item">
-                    <button onclick="changeImage('cape')">Arcane Umbra Cape</button>
+                    <button onclick="resetProgress('cape');">Arcane Umbra Cape</button>
                </li>
                <li class="context-menu-item">
-                    <button onclick="changeImage('glove')">Arcane Umbra Glove</button>
+                    <button onclick="resetProgress('glove');">Arcane Umbra Glove</button>
                </li>
           </ul>
      </nav>
-     
+
      <div id="system-stats" class="borders-in-main-content">
-          Highest: <span id="highest-star-record"> 0</span> Star(s)
+          Highest: <span id="highest-star-record-span"> 0</span> Star(s)
           <br /><br />
-          Booms: <span id="booms-record"> 0</span> Count
+          Booms: <span id="booms-record-span"> 0</span> Count
      </div>
 
      <script src="../context_menu_script.js"></script>
