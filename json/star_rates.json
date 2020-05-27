@@ -76,34 +76,104 @@
         "failRate": 500,
         "boomRate": 0
       }
+    },
+    {
+      "eleven": {
+        "successRate": 450,
+        "failRate": 550,
+        "boomRate": 0
+      }
+    },
+    {
+      "twelve": {
+        "successRate": 400,
+        "failRate": 594,
+        "boomRate": 6
+      }
+    },
+    {
+      "thirteen": {
+        "successRate": 350,
+        "failRate": 637,
+        "boomRate": 13
+      }
+    },
+    {
+      "fourteen": {
+        "successRate": 300,
+        "failRate": 686,
+        "boomRate": 14
+      }
+    },
+    {
+      "fifteen": {
+        "successRate": 300,
+        "failRate": 679,
+        "boomRate": 21
+      }
+    },
+    {
+      "sixteen": {
+        "successRate": 300,
+        "failRate": 679,
+        "boomRate": 21
+      }
+    },
+    {
+      "seventeen": {
+        "successRate": 300,
+        "failRate": 679,
+        "boomRate": 21
+      }
+    },
+    {
+      "eighteen": {
+        "successRate": 300,
+        "failRate": 672,
+        "boomRate": 28
+      }
+    },
+    {
+      "nineteen": {
+        "successRate": 300,
+        "failRate": 672,
+        "boomRate": 28
+      }
+    },
+    {
+      "twenty": {
+        "successRate": 300,
+        "failRate": 630,
+        "boomRate": 70
+      }
+    },
+    {
+      "twentyone": {
+        "successRate": 300,
+        "failRate": 630,
+        "boomRate": 70
+      }
+    },
+    {
+      "twentytwo": {
+        "successRate": 300,
+        "failRate": 776,
+        "boomRate": 194
+      }
+    },
+    {
+      "twentythree": {
+        "successRate": 20,
+        "failRate": 686,
+        "boomRate": 294
+      }
+    },
+    {
+      "twentyfour": {
+        "successRate": 10,
+        "failRate": 594,
+        "boomRate": 396
+      }
     }
-
   ]
 }
-
-
-
-////drop star levels
-//var eleven = [450, 550, 0];
-////boom star levels
-//var twelve = [400, 594, 6];
-//var thirteen = [350, 637, 13];
-//var fourteen = [300, 686, 14];
-////maintain star levels
-//var fifteen = [300, 679, 21];
-////boom star levels
-//var sixteen = [300, 679, 21];
-//var seventeen = [300, 679, 21];
-//var eighteen = [300, 672, 28];
-//var nineteen = [300, 672, 28];
-////stay star levels
-//var twenty = [300, 630, 70];
-////boom star levels
-//var twentyone = [300, 630, 70];
-//var twentytwo = [30, 776, 194];
-//var twentythree = [20, 686, 294];
-//var twentyfour = [10, 594, 396];
-
-//var allStars = [zero, one, two, three, four, five, six, seven,
-//    eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen,
-//    seventeen, eighteen, nineteen, twenty, twentyone, twentytwo, twentythree, twentyfour];
