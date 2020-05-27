@@ -1,0 +1,109 @@
+{
+  "allStars": [
+    {
+      "zero": {
+        "successRate": 950,
+        "failRate": 50,
+        "boomRate": 0
+      }
+    },
+    {
+      "one": {
+        "successRate": 900,
+        "failRate": 100,
+        "boomRate": 0
+      }
+    },
+    {
+      "two": {
+        "successRate": 850,
+        "failRate": 150,
+        "boomRate": 0
+      }
+    },
+    {
+      "three": {
+        "successRate": 850,
+        "failRate": 150,
+        "boomRate": 0
+      }
+    },
+    {
+      "four": {
+        "successRate": 800,
+        "failRate": 200,
+        "boomRate": 0
+      }
+    },
+    {
+      "five": {
+        "successRate": 750,
+        "failRate": 250,
+        "boomRate": 0
+      }
+    },
+    {
+      "six": {
+        "successRate": 700,
+        "failRate": 300,
+        "boomRate": 0
+      }
+    },
+    {
+      "seven": {
+        "successRate": 650,
+        "failRate": 350,
+        "boomRate": 0
+      }
+    },
+    {
+      "eight": {
+        "successRate": 600,
+        "failRate": 400,
+        "boomRate": 0
+      }
+    },
+    {
+      "nine": {
+        "successRate": 550,
+        "failRate": 450,
+        "boomRate": 0
+      }
+    },
+    {
+      "ten": {
+        "successRate": 500,
+        "failRate": 500,
+        "boomRate": 0
+      }
+    }
+
+  ]
+}
+
+
+
+////drop star levels
+//var eleven = [450, 550, 0];
+////boom star levels
+//var twelve = [400, 594, 6];
+//var thirteen = [350, 637, 13];
+//var fourteen = [300, 686, 14];
+////maintain star levels
+//var fifteen = [300, 679, 21];
+////boom star levels
+//var sixteen = [300, 679, 21];
+//var seventeen = [300, 679, 21];
+//var eighteen = [300, 672, 28];
+//var nineteen = [300, 672, 28];
+////stay star levels
+//var twenty = [300, 630, 70];
+////boom star levels
+//var twentyone = [300, 630, 70];
+//var twentytwo = [30, 776, 194];
+//var twentythree = [20, 686, 294];
+//var twentyfour = [10, 594, 396];
+
+//var allStars = [zero, one, two, three, four, five, six, seven,
+//    eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen,
+//    seventeen, eighteen, nineteen, twenty, twentyone, twentytwo, twentythree, twentyfour];
