@@ -4,168 +4,76 @@
       "zeroSuccFailBoomRate": [ 950, 50, 0 ]
     },
     {
-      "oneSuccFailBoomRate": [ 900, 100, 0 ]      
+      "oneSuccFailBoomRate": [ 900, 100, 0 ]
     },
     {
-      "two": {
-        "successRate": 850,
-        "failRate": 150,
-        "boomRate": 0
-      }
+      "twoSuccFailBoomRate": [ 850, 150, 0 ]
     },
     {
-      "three": {
-        "successRate": 850,
-        "failRate": 150,
-        "boomRate": 0
-      }
+      "threeSuccFailBoomRate": [ 850, 150, 0 ]
     },
     {
-      "four": {
-        "successRate": 800,
-        "failRate": 200,
-        "boomRate": 0
-      }
+      "fourSuccFailBoomRate": [ 800, 200, 0 ]
     },
     {
-      "five": {
-        "successRate": 750,
-        "failRate": 250,
-        "boomRate": 0
-      }
+      "fiveSuccFailBoomRate": [ 750, 250, 0 ]
     },
     {
-      "six": {
-        "successRate": 700,
-        "failRate": 300,
-        "boomRate": 0
-      }
+      "sixSuccFailBoomRate": [ 700, 300, 0 ]
     },
     {
-      "seven": {
-        "successRate": 650,
-        "failRate": 350,
-        "boomRate": 0
-      }
+      "sevenSuccFailBoomRate": [ 650, 350, 0 ]
     },
     {
-      "eight": {
-        "successRate": 600,
-        "failRate": 400,
-        "boomRate": 0
-      }
+      "eightSuccFailBoomRate": [ 600, 400, 0 ]
     },
     {
-      "nine": {
-        "successRate": 550,
-        "failRate": 450,
-        "boomRate": 0
-      }
+      "nineSuccFailBoomRate": [ 550, 450, 0 ]
     },
     {
-      "ten": {
-        "successRate": 500,
-        "failRate": 500,
-        "boomRate": 0
-      }
+      "tenSuccFailBoomRate": [ 500, 500, 0 ]
     },
     {
-      "eleven": {
-        "successRate": 450,
-        "failRate": 550,
-        "boomRate": 0
-      }
+      "elevenSuccFailBoomRate": [ 450, 550, 0 ]
     },
     {
-      "twelve": {
-        "successRate": 400,
-        "failRate": 594,
-        "boomRate": 6
-      }
+      "twelveSuccFailBoomRate": [ 400, 594, 6 ]
     },
     {
-      "thirteen": {
-        "successRate": 350,
-        "failRate": 637,
-        "boomRate": 13
-      }
+      "thirteenSuccFailBoomRate": [ 350, 637, 13 ]
     },
     {
-      "fourteen": {
-        "successRate": 300,
-        "failRate": 686,
-        "boomRate": 14
-      }
+      "fourteenSuccFailBoomRate": [ 300, 686, 14 ]
     },
     {
-      "fifteen": {
-        "successRate": 300,
-        "failRate": 679,
-        "boomRate": 21
-      }
+      "fifteenSuccFailBoomRate": [ 300, 679, 21 ]
     },
     {
-      "sixteen": {
-        "successRate": 300,
-        "failRate": 679,
-        "boomRate": 21
-      }
+      "sixteenSuccFailBoomRate": [ 300, 679, 21 ]
     },
     {
-      "seventeen": {
-        "successRate": 300,
-        "failRate": 679,
-        "boomRate": 21
-      }
+      "seventeenSuccFailBoomRate": [ 300, 679, 21 ]
     },
     {
-      "eighteen": {
-        "successRate": 300,
-        "failRate": 672,
-        "boomRate": 28
-      }
+      "eighteenSuccFailBoomRate": [ 300, 672, 28 ]
     },
     {
-      "nineteen": {
-        "successRate": 300,
-        "failRate": 672,
-        "boomRate": 28
-      }
+      "nineteenSuccFailBoomRate": [ 300, 672, 28 ]
     },
     {
-      "twenty": {
-        "successRate": 300,
-        "failRate": 630,
-        "boomRate": 70
-      }
+      "twentySuccFailBoomRate": [ 300, 630, 70 ]
     },
     {
-      "twentyone": {
-        "successRate": 300,
-        "failRate": 630,
-        "boomRate": 70
-      }
+      "twentyoneSuccFailBoomRate": [ 300, 630, 70 ]
     },
     {
-      "twentytwo": {
-        "successRate": 300,
-        "failRate": 776,
-        "boomRate": 194
-      }
+      "twentytwoSuccFailBoomRate": [ 300, 776, 194 ]
     },
     {
-      "twentythree": {
-        "successRate": 20,
-        "failRate": 686,
-        "boomRate": 294
-      }
+      "twentythreeSuccFailBoomRate": [ 20, 686, 294 ]
     },
     {
-      "twentyfour": {
-        "successRate": 10,
-        "failRate": 594,
-        "boomRate": 396
-      }
+      "twentyfourSuccFailBoomRate": [ 10, 594, 396 ]
     }
   ]
 }
