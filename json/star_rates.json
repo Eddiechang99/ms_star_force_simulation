@@ -1,18 +1,10 @@
 {
   "allStars": [
     {
-      "zero": {
-        "successRate": 950,
-        "failRate": 50,
-        "boomRate": 0
-      }
+      "zeroSuccFailBoomRate": [ 950, 50, 0 ]
     },
     {
-      "one": {
-        "successRate": 900,
-        "failRate": 100,
-        "boomRate": 0
-      }
+      "oneSuccFailBoomRate": [ 900, 100, 0 ]      
     },
     {
       "two": {
