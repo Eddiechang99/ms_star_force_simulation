@@ -1,0 +1,6 @@
+//disabled: might be a future feature? array of image strings from 0 star to 25 star
+//var imageNameArray = ["../images/0star.png", "../images/1star.png", "../images/2star.png", "../images/3star.png", "../images/4star.png",
+//     "../images/5star.png", "../images/6star.png", "../images/7star.png", "../images/8star.png", "../images/9star.png", "../images/10star.png",
+//     "../images/11star.png", "../images/12star.png", "../images/13star.png", "../images/14star.png", "../images/15star.png",
+//     "../images/16star.png", "../images/17star.png", "../images/18star.png", "../images/19star.png", "../images/20star.png",
+//     "../images/21star.png", "../images/22star.png", "../images/23star.png", "../images/24star.png", "../images/25star.png"];
