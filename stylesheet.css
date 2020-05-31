@@ -188,26 +188,37 @@ h1 {
 }
 
      .context-menu ul {
+          height: 12em;
           list-style-type: none;
           padding: 0;
           margin: 0;
-          text-align: center;
+          overflow: hidden;
+          overflow-y: scroll;
      }
 
      .context-menu li {
           border: 1px solid black;
+          text-align: center;
      }
 
-          .context-menu li:hover, .context-menu button:hover {
-               background-color: lightslategrey;
-          }
+.context-menu-headings {
+     font-weight: bolder;
+     padding: .3em;
+     text-decoration: underline;
+     background-color: black;
+     color: rgb(246,239,166);
+}
 
-     .context-menu button {
-          background-color: rgb(246,239,166);
-          border: none;
-          width: 100%;
-          height: 3em;
-     }
+.context-menu button:hover {
+     background-color: lightslategrey;
+}
+
+.context-menu button {
+     background-color: rgb(246,239,166);
+     border: none;
+     width: 100%;
+     height: 3em;
+}
 
 .context-menu--active {
      display: block;

@@ -110,8 +110,8 @@ function outputNext(currentStar, ratesArray) {
     //status rates div strings
     const currentToNextStar = `${currentStar} Star > ${currentStar + 1} Star`;
     const succChance = `Success Chance: ${nextSuccess}%`;
-    const failKeep = `Failure (Keep): ${nextFail}%`;
-    const failDrop = `Failure (Drop): ${nextFail}%`;
+    const failKeep = `Failure (Keep) Chance: ${nextFail}%`;
+    const failDrop = `Failure (Drop) Chance: ${nextFail}%`;
     const boomChance = `Boom Chance: ${nextBoom}%`;
     const currentToNextAndSuccChance = currentToNextStar + newLine + succChance + newLine;
 
@@ -427,32 +427,60 @@ function changeDisclaimerSG() {
  */
 function changeImage(newItemName) {
     const itemImageName = "item-img";
-    var arcaneHatLink = "../images/arcane_hat.jpg";
-    var arcaneShoulderLink = "../images/arcane_shoulder.jpg";
-    var arcaneOverallLink = "../images/arcane_overall.jpg";
-    var arcaneShoeLink = "../images/arcane_shoe.jpg";
-    var arcaneCapeLink = "../images/arcane_cape.jpg";
-    var arcaneGloveLink = "../images/arcane_glove.jpg";
+    var arcaneHatLink = "../images/lv200/arcane_umbra_knight_hat.jpg";
+    var arcaneShoulderLink = "../images/lv200/arcane_umbra_knight_shoulder.jpg";
+    var arcaneOverallLink = "../images/lv200/arcane_umbra_knight_overall.jpg";
+    var arcaneShoeLink = "../images/lv200/arcane_umbra_knight_shoe.jpg";
+    var arcaneCapeLink = "../images/lv200/arcane_umbra_knight_cape.jpg";
+    var arcaneGloveLink = "../images/lv200/arcane_umbra_knight_glove.jpg";
+    var royalHelmLink = "../images/lv150/royal_warrior_helm.png";
+    var eagleTopLink = "../images/lv150/eagle_eye_warrior_armor.png";
+    var trixterPantsLink = "../images/lv150/trixter_warrior_pants.png";
+    var beltLink = "../images/lv150/superior_engraved_gollux_belt.png";
+    var pendantLink = "../images/lv150/superior_engraved_gollux_pendant.png";
+    var earLink = "../images/lv150/superior_gollux_earring.png";
+    var ringLink = "../images/lv150/superior_gollux_ring.png";
 
     var noItemMessage = "No item found. Contact support.";
 
     switch (newItemName) {
-        case "hat":
+        case "royal_warrior_helm":
+            document.getElementsByClassName(itemImageName.toString())[0].src = royalHelmLink.toString();
+            break;
+        case "eagle_eye_warrior_armor":
+            document.getElementsByClassName(itemImageName.toString())[0].src = eagleTopLink.toString();
+            break;
+        case "trixter_warrior_pants":
+            document.getElementsByClassName(itemImageName.toString())[0].src = trixterPantsLink.toString();
+            break;
+        case "superior_engraved_gollux_belt":
+            document.getElementsByClassName(itemImageName.toString())[0].src = beltLink.toString();
+            break;
+        case "superior_engraved_gollux_pendant":
+            document.getElementsByClassName(itemImageName.toString())[0].src = pendantLink.toString();
+            break;
+        case "superior_gollux_earring":
+            document.getElementsByClassName(itemImageName.toString())[0].src = earLink.toString();
+            break;
+        case "superior_gollux_ring":
+            document.getElementsByClassName(itemImageName.toString())[0].src = ringLink.toString();
+            break;
+        case "arcane_umbra_knight_hat":
             document.getElementsByClassName(itemImageName.toString())[0].src = arcaneHatLink.toString();
             break;
-        case "shoulder":
+        case "arcane_umbra_knight_shoulder":
             document.getElementsByClassName(itemImageName.toString())[0].src = arcaneShoulderLink.toString();
             break;
-        case "overall":
+        case "arcane_umbra_knight_overall":
             document.getElementsByClassName(itemImageName.toString())[0].src = arcaneOverallLink.toString();
             break;
-        case "shoe":
+        case "arcane_umbra_knight_shoe":
             document.getElementsByClassName(itemImageName.toString())[0].src = arcaneShoeLink.toString();
             break;
-        case "cape":
+        case "arcane_umbra_knight_cape":
             document.getElementsByClassName(itemImageName.toString())[0].src = arcaneCapeLink.toString();
             break;
-        case "glove":
+        case "arcane_umbra_knight_glove":
             document.getElementsByClassName(itemImageName.toString())[0].src = arcaneGloveLink.toString();
             break;
         default:
