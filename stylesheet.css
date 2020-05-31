@@ -209,6 +209,11 @@ h1 {
      color: rgb(246,239,166);
 }
 
+.context-menu-item button {
+     text-align: left;
+     padding:1em;
+}
+
 .context-menu button:hover {
      background-color: lightslategrey;
 }
