@@ -26,5 +26,30 @@
      "superior_gollux_ring": {
           "level": 150,
           "imgLocation": "../images/lv150/superior_gollux_ring.png"
+     },
+
+     "arcane_umbra_knight_hat": {
+          "level": 200,
+          "imgLocation": "../images/lv200/arcane_umbra_knight_hat.jpg"
+     },
+     "arcane_umbra_knight_shoulder": {
+          "level": 200,
+          "imgLocation": "../images/lv200/arcane_umbra_knight_shoulder.jpg"
+     },
+     "arcane_umbra_knight_overall": {
+          "level": 200,
+          "imgLocation": "../images/lv200/arcane_umbra_knight_overall.jpg"
+     },
+     "arcane_umbra_knight_shoe": {
+          "level": 200,
+          "imgLocation": "../images/lv200/arcane_umbra_knight_shoe.jpg"
+     },
+     "arcane_umbra_knight_cape": {
+          "level": 200,
+          "imgLocation": "../images/lv200/arcane_umbra_knight_cape.jpg"
+     },
+     "arcane_umbra_knight_glove": {
+          "level": 200,
+          "imgLocation": "../images/lv200/arcane_umbra_knight_glove.jpg"
      }
 }
