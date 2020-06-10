@@ -211,7 +211,7 @@ h1 {
 
 .context-menu-item button {
      text-align: left;
-     padding:1em;
+     padding: 1em;
 }
 
 .context-menu button:hover {
@@ -231,16 +231,16 @@ h1 {
 
 #system-stats {
      border: none;
-     width: 10em;
+     width: 18em;
      margin: auto;
      margin-top: 1em;
      padding: .5em;
      color: black;
-     text-align: center;
+     text-align: left;
      background-color: rgb(246,239,166);
      font-size: 1.5em;
 }
 
-#highest-star-record-span, #booms-record-span {
-     text-decoration: underline;
+.second-column-system-stats {
+     padding-left:2em;
 }

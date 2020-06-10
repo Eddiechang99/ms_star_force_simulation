@@ -6,7 +6,7 @@
      <meta name="keywords" content="star, force, starforce, maplestory, maple, story, simulation, simulator, gms, enhancement, enhance">
 
      <base href="https://jato521.github.io/ms_star_force_simulation/ms_star_force_simulation/" target="_blank">
-     <!--<base href="C:\Users\Jason\Desktop\Star Force Enhancement\ms_star_force_simulation\images\" target="_blank">-->
+     <!-- <base href="C:\Users\Jason\Desktop\Star Force Enhancement\ms_star_force_simulation\images\" target="_blank"> -->
 
      <title>Star Force Simulator</title>
 
@@ -18,7 +18,7 @@
      <script src="../scripts/reload_script.js"></script>
 </head>
 
-<body>
+<body onload="startUp()">
      <div id="wrapper">
           <h1>EQUIPMENT ENCHANT</h1>
           <div id="main-content-div">
@@ -29,35 +29,28 @@
                </div>
                <div class="row-div">
                     <div id="second-row-column-div" class="borders-in-main-content dark-brown-background">
-                         <div id="disclaimer-div">
-                              <span style="color:rgb(233,219,18)">MESOS</span>
-                              ARE USED TO ENHANCE EQUIPEMENT.
-                         </div>
+                         <div id="disclaimer-div"></div>
                     </div>
                </div>
                <div class="row-div">
-                    <img class="item-img borders-in-main-content third-row-column-divs" src="../images/lv200/arcane_umbra_knight_hat.jpg" alt="item" title="Right click to change item" />
-                    <div id="status-div" class="borders-in-main-content third-row-column-divs dark-brown-background">
-                         0 Star > 1 Star<br />
-                         Success Chance: 95% <br />
-                         Failure (Keep) Chance: 5%
-                    </div>
+                    <img class="item-img borders-in-main-content third-row-column-divs" alt="item" title="Right click to change item" />
+                    <div id="status-div" class="borders-in-main-content third-row-column-divs dark-brown-background"></div>
                </div>
                <div class="row-div">
                     <div class="borders-in-main-content fourth-row-column-divs dark-brown-background">
                          <div>DISABLE STAR CATCHING</div>
-                         <input type="checkbox" id="starCatchCheckBox" name="starCatch" value="0" />
+                         <input type="checkbox" id="starCatchCheckBox" name="starCatch" value="0" disabled="disabled" />
                     </div>
                     <div id="safeguard-div" class="borders-in-main-content fourth-row-column-divs dark-brown-background">
                          <div>SAFEGUARD</div>
-                         <input type="checkbox" id="safeguardCheckBox" name="safeguard" value="0" onclick="changeDisclaimerSG()" title="Check this to protect your equipment from being destroyed" />
+                         <input type="checkbox" id="safeguardCheckBox" name="safeguard" value="0" onclick="changeDisclaimerSG(); changeMesosCostSG();" title="Check this to protect your equipment from being destroyed from 12-16 stars" disabled="disabled" />
                     </div>
                </div>
                <div class="row-div">
                     <div class="borders-in-main-content fifth-row-column-divs dark-brown-background">
                          <img src="../images/coin.jpg" id="coin-img" alt="coin" />
                          <div>REQUIRED MESOS: </div>
-                         <div id="mesos-amt-div">14,700</div>
+                         <div id="mesos-amt-div"></div>
                     </div>
                </div>
                <div class="row-div">
@@ -127,9 +120,24 @@
      </nav>
 
      <div id="system-stats" class="borders-in-main-content">
-          Highest: <span id="highest-star-record-span"> 0</span> Star(s)
-          <br /><br />
-          Booms: <span id="booms-record-span"> 0</span> Count
+          <table>
+               <tr>
+                    <td>Item Level:</td>
+                    <td id="item-level-td" class="second-column-system-stats">0</td>
+               </tr>
+               <tr>
+                    <td>Highest Star:</td>
+                    <td id="highest-star-record-td" class="second-column-system-stats">0</td>
+               </tr>
+               <tr>
+                    <td>Booms:</td>
+                    <td id="booms-record-td" class="second-column-system-stats">0</td>
+               </tr>
+               <tr>
+                    <td>Total Cost:</td>
+                    <td id="total-cost-td" class="second-column-system-stats">0</td>
+               </tr>
+          </table>
      </div>
 
      <script src="../scripts/context_menu_script.js"></script>
