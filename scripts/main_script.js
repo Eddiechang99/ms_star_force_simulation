@@ -87,7 +87,7 @@ function startUp() {
         var allItems = request.response;
         allItems = JSON.parse(allItems);
 
-        var startItem = allItems.royal_warrior_helm;
+        var startItem = allItems.breath_of_divinity;
         document.getElementsByClassName(ITEM_IMG_NAME)[0].src = startItem.imgLocation;
 
         var enhanceCost = getEnhancementCost(startItem.level, globalStars);
@@ -576,6 +576,10 @@ function changeItem(newItemName) {
 
         switch (newItemName) {
             //lv150 items
+            case "breath_of_divinity":
+                document.getElementsByClassName(ITEM_IMG_NAME)[0].src = allItems.breath_of_divinity.imgLocation;
+                document.getElementById(ITEM_LEVEL_TD_NAME).innerHTML = allItems.breath_of_divinity.level;
+                document.getElementById(MESOS_AMT_DIV_NAME).innerHTML = getEnhancementCost(allItems.breath_of_divinity.level, globalStars).toLocaleString();
             case "royal_warrior_helm":
                 document.getElementsByClassName(ITEM_IMG_NAME)[0].src = allItems.royal_warrior_helm.imgLocation;
                 document.getElementById(ITEM_LEVEL_TD_NAME).innerHTML = allItems.royal_warrior_helm.level;

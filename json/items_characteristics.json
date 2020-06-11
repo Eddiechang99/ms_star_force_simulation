@@ -1,55 +1,59 @@
 {
-     "royal_warrior_helm": {
-          "level": 150,
-          "imgLocation": "../images/lv150/royal_warrior_helm.png"
-     },
-     "eagle_eye_warrior_armor": {
-          "level": 150,
-          "imgLocation": "../images/lv150/eagle_eye_warrior_armor.png"
-     },
-     "trixter_warrior_pants": {
-          "level": 150,
-          "imgLocation": "../images/lv150/trixter_warrior_pants.png"
-     },
-     "superior_engraved_gollux_belt": {
-          "level": 150,
-          "imgLocation": "../images/lv150/superior_engraved_gollux_belt.png"
-     },
-     "superior_engraved_gollux_pendant": {
-          "level": 150,
-          "imgLocation": "../images/lv150/superior_engraved_gollux_pendant.png"
-     },
-     "superior_gollux_earring": {
-          "level": 150,
-          "imgLocation": "../images/lv150/superior_gollux_earring.png"
-     },
-     "superior_gollux_ring": {
-          "level": 150,
-          "imgLocation": "../images/lv150/superior_gollux_ring.png"
-     },
+  "breath_of_divinity": {
+    "level": 150,
+    "imgLocation": "../images/lv150/breath_of_divinity.jpg"
+  },
+  "royal_warrior_helm": {
+    "level": 150,
+    "imgLocation": "../images/lv150/royal_warrior_helm.png"
+  },
+  "eagle_eye_warrior_armor": {
+    "level": 150,
+    "imgLocation": "../images/lv150/eagle_eye_warrior_armor.png"
+  },
+  "trixter_warrior_pants": {
+    "level": 150,
+    "imgLocation": "../images/lv150/trixter_warrior_pants.png"
+  },
+  "superior_engraved_gollux_belt": {
+    "level": 150,
+    "imgLocation": "../images/lv150/superior_engraved_gollux_belt.png"
+  },
+  "superior_engraved_gollux_pendant": {
+    "level": 150,
+    "imgLocation": "../images/lv150/superior_engraved_gollux_pendant.png"
+  },
+  "superior_gollux_earring": {
+    "level": 150,
+    "imgLocation": "../images/lv150/superior_gollux_earring.png"
+  },
+  "superior_gollux_ring": {
+    "level": 150,
+    "imgLocation": "../images/lv150/superior_gollux_ring.png"
+  },
 
-     "arcane_umbra_knight_hat": {
-          "level": 200,
-          "imgLocation": "../images/lv200/arcane_umbra_knight_hat.jpg"
-     },
-     "arcane_umbra_knight_shoulder": {
-          "level": 200,
-          "imgLocation": "../images/lv200/arcane_umbra_knight_shoulder.jpg"
-     },
-     "arcane_umbra_knight_overall": {
-          "level": 200,
-          "imgLocation": "../images/lv200/arcane_umbra_knight_overall.jpg"
-     },
-     "arcane_umbra_knight_shoe": {
-          "level": 200,
-          "imgLocation": "../images/lv200/arcane_umbra_knight_shoe.jpg"
-     },
-     "arcane_umbra_knight_cape": {
-          "level": 200,
-          "imgLocation": "../images/lv200/arcane_umbra_knight_cape.jpg"
-     },
-     "arcane_umbra_knight_glove": {
-          "level": 200,
-          "imgLocation": "../images/lv200/arcane_umbra_knight_glove.jpg"
-     }
+  "arcane_umbra_knight_hat": {
+    "level": 200,
+    "imgLocation": "../images/lv200/arcane_umbra_knight_hat.jpg"
+  },
+  "arcane_umbra_knight_shoulder": {
+    "level": 200,
+    "imgLocation": "../images/lv200/arcane_umbra_knight_shoulder.jpg"
+  },
+  "arcane_umbra_knight_overall": {
+    "level": 200,
+    "imgLocation": "../images/lv200/arcane_umbra_knight_overall.jpg"
+  },
+  "arcane_umbra_knight_shoe": {
+    "level": 200,
+    "imgLocation": "../images/lv200/arcane_umbra_knight_shoe.jpg"
+  },
+  "arcane_umbra_knight_cape": {
+    "level": 200,
+    "imgLocation": "../images/lv200/arcane_umbra_knight_cape.jpg"
+  },
+  "arcane_umbra_knight_glove": {
+    "level": 200,
+    "imgLocation": "../images/lv200/arcane_umbra_knight_glove.jpg"
+  }
 }
