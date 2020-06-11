@@ -580,6 +580,7 @@ function changeItem(newItemName) {
                 document.getElementsByClassName(ITEM_IMG_NAME)[0].src = allItems.breath_of_divinity.imgLocation;
                 document.getElementById(ITEM_LEVEL_TD_NAME).innerHTML = allItems.breath_of_divinity.level;
                 document.getElementById(MESOS_AMT_DIV_NAME).innerHTML = getEnhancementCost(allItems.breath_of_divinity.level, globalStars).toLocaleString();
+                break;
             case "royal_warrior_helm":
                 document.getElementsByClassName(ITEM_IMG_NAME)[0].src = allItems.royal_warrior_helm.imgLocation;
                 document.getElementById(ITEM_LEVEL_TD_NAME).innerHTML = allItems.royal_warrior_helm.level;
