@@ -32,6 +32,35 @@
     "imgLocation": "../images/lv150/superior_gollux_ring.png"
   },
 
+  "sweetwater_tattoo": {
+    "level": 160,
+    "imgLocation": "../images/lv160/sweetwater_tattoo.png"
+  },
+  "sweetwater_monocle": {
+    "level": 160,
+    "imgLocation": "../images/lv160/sweetwater_monocle.png"
+  },
+  "absolab_knight_helm": {
+    "level": 160,
+    "imgLocation": "../images/lv160/absolab_knight_helm.png"
+  },
+  "absolab_knight_shoulder": {
+    "level": 160,
+    "imgLocation": "../images/lv160/absolab_knight_shoulder.png"
+  },
+  "absolab_knight_glove": {
+    "level": 160,
+    "imgLocation": "../images/lv160/absolab_knight_glove.png"
+  },
+  "absolab_knight_cape": {
+    "level": 160,
+    "imgLocation": "../images/lv160/absolab_knight_cape.png"
+  },
+  "absolab_knight_shoe": {
+    "level": 160,
+    "imgLocation": "../images/lv160/absolab_knight_shoe.png"
+  },
+
   "arcane_umbra_knight_hat": {
     "level": 200,
     "imgLocation": "../images/lv200/arcane_umbra_knight_hat.jpg"
