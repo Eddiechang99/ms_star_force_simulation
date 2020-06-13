@@ -242,5 +242,19 @@ h1 {
 }
 
 .second-column-system-stats {
-     padding-left:2em;
+     padding-left: 2em;
+}
+
+#helpful-hint-div {
+     text-align: center;
+     font-style: italic;
+     margin-top: .5em;
+}
+
+.bold-text {
+     font-weight: bold;
+}
+
+.underline-text {
+     text-decoration: underline;
 }

@@ -616,6 +616,43 @@ function changeItem(newItemName) {
                 document.getElementById(ITEM_LEVEL_TD_NAME).innerHTML = allItems.superior_gollux_ring.level;
                 document.getElementById(MESOS_AMT_DIV_NAME).innerHTML = getEnhancementCost(allItems.superior_gollux_ring.level, globalStars).toLocaleString();
                 break;
+            //level 160 items
+            case "sweetwater_tattoo":
+                document.getElementsByClassName(ITEM_IMG_NAME)[0].src = allItems.sweetwater_tattoo.imgLocation;
+                document.getElementById(ITEM_LEVEL_TD_NAME).innerHTML = allItems.sweetwater_tattoo.level;
+                document.getElementById(MESOS_AMT_DIV_NAME).innerHTML = getEnhancementCost(allItems.sweetwater_tattoo.level, globalStars).toLocaleString();
+                break;
+            case "sweetwater_monocle":
+                document.getElementsByClassName(ITEM_IMG_NAME)[0].src = allItems.sweetwater_monocle.imgLocation;
+                document.getElementById(ITEM_LEVEL_TD_NAME).innerHTML = allItems.sweetwater_monocle.level;
+                document.getElementById(MESOS_AMT_DIV_NAME).innerHTML = getEnhancementCost(allItems.sweetwater_monocle.level, globalStars).toLocaleString();
+                break;
+            case "absolab_knight_helm":
+                document.getElementsByClassName(ITEM_IMG_NAME)[0].src = allItems.absolab_knight_helm.imgLocation;
+                document.getElementById(ITEM_LEVEL_TD_NAME).innerHTML = allItems.absolab_knight_helm.level;
+                document.getElementById(MESOS_AMT_DIV_NAME).innerHTML = getEnhancementCost(allItems.absolab_knight_helm.level, globalStars).toLocaleString();
+                break;
+            case "absolab_knight_shoulder":
+                document.getElementsByClassName(ITEM_IMG_NAME)[0].src = allItems.absolab_knight_shoulder.imgLocation;
+                document.getElementById(ITEM_LEVEL_TD_NAME).innerHTML = allItems.absolab_knight_shoulder.level;
+                document.getElementById(MESOS_AMT_DIV_NAME).innerHTML = getEnhancementCost(allItems.absolab_knight_shoulder.level, globalStars).toLocaleString();
+                break;
+            case "absolab_knight_glove":
+                document.getElementsByClassName(ITEM_IMG_NAME)[0].src = allItems.absolab_knight_glove.imgLocation;
+                document.getElementById(ITEM_LEVEL_TD_NAME).innerHTML = allItems.absolab_knight_glove.level;
+                document.getElementById(MESOS_AMT_DIV_NAME).innerHTML = getEnhancementCost(allItems.absolab_knight_glove.level, globalStars).toLocaleString();
+                break;
+            case "absolab_knight_cape":
+                document.getElementsByClassName(ITEM_IMG_NAME)[0].src = allItems.absolab_knight_cape.imgLocation;
+                document.getElementById(ITEM_LEVEL_TD_NAME).innerHTML = allItems.absolab_knight_cape.level;
+                document.getElementById(MESOS_AMT_DIV_NAME).innerHTML = getEnhancementCost(allItems.absolab_knight_cape.level, globalStars).toLocaleString();
+                break;
+            case "absolab_knight_shoe":
+                document.getElementsByClassName(ITEM_IMG_NAME)[0].src = allItems.absolab_knight_shoe.imgLocation;
+                document.getElementById(ITEM_LEVEL_TD_NAME).innerHTML = allItems.absolab_knight_shoe.level;
+                document.getElementById(MESOS_AMT_DIV_NAME).innerHTML = getEnhancementCost(allItems.absolab_knight_shoe.level, globalStars).toLocaleString();
+                break;
+
             //lv200 items
             case "arcane_umbra_knight_hat":
                 document.getElementsByClassName(ITEM_IMG_NAME)[0].src = allItems.arcane_umbra_knight_hat.imgLocation;
