@@ -67,7 +67,7 @@
       "twentyoneSuccFailBoomRate": [ 300, 630, 70 ]
     },
     {
-      "twentytwoSuccFailBoomRate": [ 300, 776, 194 ]
+      "twentytwoSuccFailBoomRate": [ 30, 776, 194 ]
     },
     {
       "twentythreeSuccFailBoomRate": [ 20, 686, 294 ]
